@@ -1,6 +1,11 @@
 
 
-module encoder2_4(input a, input b, output reg [3:0] q );
+module encoder2_4(
+				input a, 
+				input b, 
+				output reg [3:0] q 
+				);	
+	
 	always @(*) begin
 		case({a, b}) 
 			2'b00: q = 4'b1000;
@@ -49,4 +54,5 @@ module testbench_endc(
 end
 	
 endmodule
+
 
