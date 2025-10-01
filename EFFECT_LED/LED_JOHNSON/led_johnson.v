@@ -14,7 +14,7 @@ module johnson(
        else begin
             cnt <= cnt + 1'b1;
             shift <= 1'b0;
-            if(cnt >= 31'd13_499_999) begin
+           if(cnt >= 31'd13_499_999) begin // delay 0.5 second with f = 27MHz
                     shift <= 1'b1;
                     cnt <= 1'b0;
                 end
@@ -30,6 +30,7 @@ module johnson(
                 led_j <= {~led_j[0], led_j[7:1]};
             end
      end
+
     end
 
 endmodule
