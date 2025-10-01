@@ -7,7 +7,7 @@ module johnson(
     reg [31:0] cnt;
     reg shift;
 
-    always @(posedge clk) begin
+    always @(posedge clk) begin // synchronous
         if(!rst) begin
             cnt <= 32'b0;
         end
@@ -34,3 +34,4 @@ module johnson(
     end
 
 endmodule
+
