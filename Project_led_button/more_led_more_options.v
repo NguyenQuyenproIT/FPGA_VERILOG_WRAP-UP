@@ -1,4 +1,5 @@
 // cau 2: more led more option
+// moi nut bam sẽ tạo ra 1 hiệu ứng khác nhau
 
 module but_led(
     input clk, 
@@ -85,3 +86,4 @@ reg button3_last;
     end
 
 endmodule
+
